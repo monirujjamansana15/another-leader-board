@@ -113,27 +113,35 @@ hr{
 /* ---------------------
       top-blogs-style
 ---------------------- */
-
+.top-blogs{
+    margin-left: 65px;
+}
 .blogs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    place-items: center;
 }
 .blog{
     display: flex;
-    justify-content: center;
     align-items: center;
+    /* justify-content: center; That's the problem */
 }
 .blogs .blog .blog-thumbnail img{
     width: 177px;
     height: 117px;
-    border: 2px solid red;
 }
 .blog-info{
     margin-left: 16px;
+   
 }
 .blog-info h3{
     font-size: 20px;
     color: #000000;
     
+}
+.blog-info p a{
+    color: #562EFF;
+    text-decoration: none;
+}
+.blog-info p span{
+    color: #9F9F9F;
 }
